@@ -1,0 +1,89 @@
+2019-07-04 22:47:37.430  INFO 7969 --- [restartedMain] c.e.e.ElasticStackDemoApplication        : Starting ElasticStackDemoApplication on vetala with PID 7969 (/home/kekhuay/Documents/workspace/elastic-stack-demo/bin/main started by kekhuay in /home/kekhuay/Documents/workspace/elastic-stack-demo)
+2019-07-04 22:47:37.433  INFO 7969 --- [restartedMain] c.e.e.ElasticStackDemoApplication        : No active profile set, falling back to default profiles: default
+2019-07-04 22:47:37.472  INFO 7969 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-07-04 22:47:38.081  INFO 7969 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-07-04 22:47:38.111  INFO 7969 --- [restartedMain] c.e.e.ElasticStackDemoApplication        : Started ElasticStackDemoApplication in 1.026 seconds (JVM running for 1.363)
+2019-07-04 22:47:38.112 ERROR 7969 --- [restartedMain] ication$$EnhancerBySpringCGLIB$$69b8a029 : number: 0
+2019-07-04 22:47:38.114 ERROR 7969 --- [restartedMain] ication$$EnhancerBySpringCGLIB$$69b8a029 : number: 1
+2019-07-04 22:47:38.114 ERROR 7969 --- [restartedMain] ication$$EnhancerBySpringCGLIB$$69b8a029 : number: 2
+2019-07-04 22:47:38.114 ERROR 7969 --- [restartedMain] ication$$EnhancerBySpringCGLIB$$69b8a029 : number: 3
+2019-07-04 22:47:38.115 ERROR 7969 --- [restartedMain] ication$$EnhancerBySpringCGLIB$$69b8a029 : number: 4
+2019-07-04 22:47:38.115 ERROR 7969 --- [restartedMain] ication$$EnhancerBySpringCGLIB$$69b8a029 : number: 5
+2019-07-04 22:47:38.115 ERROR 7969 --- [restartedMain] ication$$EnhancerBySpringCGLIB$$69b8a029 : number: 6
+2019-07-04 22:47:38.115 ERROR 7969 --- [restartedMain] ication$$EnhancerBySpringCGLIB$$69b8a029 : number: 7
+2019-07-04 22:47:38.116 ERROR 7969 --- [restartedMain] ication$$EnhancerBySpringCGLIB$$69b8a029 : number: 8
+2019-07-04 22:47:38.116 ERROR 7969 --- [restartedMain] ication$$EnhancerBySpringCGLIB$$69b8a029 : number: 9
+2019-07-04 22:49:22.440 ERROR 8077 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@5:146 - RuntimeException in Action for tag [property] java.lang.IllegalArgumentException: All tokens consumed but was expecting "}"
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:166)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:79)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:59)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:117)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:280)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:255)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:220)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:197)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:53)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1227)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1216)
+	at com.example.elasticstackdemo.ElasticStackDemoApplication.main(ElasticStackDemoApplication.java:13)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+
+2019-07-04 22:50:04,962 INFO restartedMain org.springframework.boot.StartupInfoLogger Starting ElasticStackDemoApplication on vetala with PID 8128 (/home/kekhuay/Documents/workspace/elastic-stack-demo/bin/main started by kekhuay in /home/kekhuay/Documents/workspace/elastic-stack-demo)
+2019-07-04 22:50:04,965 INFO restartedMain org.springframework.boot.SpringApplication No active profile set, falling back to default profiles: default
+2019-07-04 22:50:05,015 INFO restartedMain org.springframework.boot.logging.DeferredLog Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-07-04 22:50:05,601 INFO restartedMain org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer LiveReload server is running on port 35729
+2019-07-04 22:50:05,624 INFO restartedMain org.springframework.boot.StartupInfoLogger Started ElasticStackDemoApplication in 0.998 seconds (JVM running for 1.331)
+2019-07-04 22:50:05,625 ERROR restartedMain com.example.elasticstackdemo.ElasticStackDemoApplication number: 0
+2019-07-04 22:50:05,626 ERROR restartedMain com.example.elasticstackdemo.ElasticStackDemoApplication number: 1
+2019-07-04 22:50:05,626 ERROR restartedMain com.example.elasticstackdemo.ElasticStackDemoApplication number: 2
+2019-07-04 22:50:05,626 ERROR restartedMain com.example.elasticstackdemo.ElasticStackDemoApplication number: 3
+2019-07-04 22:50:05,626 ERROR restartedMain com.example.elasticstackdemo.ElasticStackDemoApplication number: 4
+2019-07-04 22:50:05,626 ERROR restartedMain com.example.elasticstackdemo.ElasticStackDemoApplication number: 5
+2019-07-04 22:50:05,626 ERROR restartedMain com.example.elasticstackdemo.ElasticStackDemoApplication number: 6
+2019-07-04 22:50:05,626 ERROR restartedMain com.example.elasticstackdemo.ElasticStackDemoApplication number: 7
+2019-07-04 22:50:05,627 ERROR restartedMain com.example.elasticstackdemo.ElasticStackDemoApplication number: 8
+2019-07-04 22:50:05,627 ERROR restartedMain com.example.elasticstackdemo.ElasticStackDemoApplication number: 9
+2019-07-04 23:02:40,044 INFO restartedMain org.springframework.boot.StartupInfoLogger Starting ElasticStackDemoApplication on vetala with PID 11236 (/home/kekhuay/Documents/workspace/elastic-stack-demo/bin/main started by kekhuay in /home/kekhuay/Documents/workspace/elastic-stack-demo)
+2019-07-04 23:02:40,046 INFO restartedMain org.springframework.boot.SpringApplication No active profile set, falling back to default profiles: default
+2019-07-04 23:02:40,084 INFO restartedMain org.springframework.boot.logging.DeferredLog Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-07-04 23:02:40,704 INFO restartedMain org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer LiveReload server is running on port 35729
+2019-07-04 23:02:40,725 INFO restartedMain org.springframework.boot.StartupInfoLogger Started ElasticStackDemoApplication in 1.019 seconds (JVM running for 1.407)
+2019-07-04 23:02:40,726 ERROR restartedMain com.example.elasticstackdemo.ElasticStackDemoApplication number: 0
+2019-07-04 23:02:40,727 ERROR restartedMain com.example.elasticstackdemo.ElasticStackDemoApplication number: 1
+2019-07-04 23:02:40,727 ERROR restartedMain com.example.elasticstackdemo.ElasticStackDemoApplication number: 2
+2019-07-04 23:02:40,727 ERROR restartedMain com.example.elasticstackdemo.ElasticStackDemoApplication number: 3
+2019-07-04 23:02:40,727 ERROR restartedMain com.example.elasticstackdemo.ElasticStackDemoApplication number: 4
+2019-07-04 23:02:40,728 ERROR restartedMain com.example.elasticstackdemo.ElasticStackDemoApplication number: 5
+2019-07-04 23:02:40,728 ERROR restartedMain com.example.elasticstackdemo.ElasticStackDemoApplication number: 6
+2019-07-04 23:02:40,728 ERROR restartedMain com.example.elasticstackdemo.ElasticStackDemoApplication number: 7
+2019-07-04 23:02:40,728 ERROR restartedMain com.example.elasticstackdemo.ElasticStackDemoApplication number: 8
+2019-07-04 23:02:40,728 ERROR restartedMain com.example.elasticstackdemo.ElasticStackDemoApplication number: 9
+2019-07-04 23:29:30,838 INFO restartedMain org.springframework.boot.StartupInfoLogger Starting ElasticStackDemoApplication on vetala with PID 20325 (/home/kekhuay/Documents/workspace/elastic-stack-demo/bin/main started by kekhuay in /home/kekhuay/Documents/workspace/elastic-stack-demo)
+2019-07-04 23:29:30,841 INFO restartedMain org.springframework.boot.SpringApplication No active profile set, falling back to default profiles: default
+2019-07-04 23:29:30,876 INFO restartedMain org.springframework.boot.logging.DeferredLog Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-07-04 23:29:31,467 INFO restartedMain org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer LiveReload server is running on port 35729
+2019-07-04 23:29:31,488 INFO restartedMain org.springframework.boot.StartupInfoLogger Started ElasticStackDemoApplication in 0.966 seconds (JVM running for 1.297)
+2019-07-04 23:29:31,489 ERROR restartedMain com.example.elasticstackdemo.ElasticStackDemoApplication number: 0
+2019-07-04 23:29:31,490 ERROR restartedMain com.example.elasticstackdemo.ElasticStackDemoApplication number: 1
+2019-07-04 23:29:31,491 ERROR restartedMain com.example.elasticstackdemo.ElasticStackDemoApplication number: 2
+2019-07-04 23:29:31,491 ERROR restartedMain com.example.elasticstackdemo.ElasticStackDemoApplication number: 3
+2019-07-04 23:29:31,491 ERROR restartedMain com.example.elasticstackdemo.ElasticStackDemoApplication number: 4
+2019-07-04 23:29:31,491 ERROR restartedMain com.example.elasticstackdemo.ElasticStackDemoApplication number: 5
+2019-07-04 23:29:31,491 ERROR restartedMain com.example.elasticstackdemo.ElasticStackDemoApplication number: 6
+2019-07-04 23:29:31,491 ERROR restartedMain com.example.elasticstackdemo.ElasticStackDemoApplication number: 7
+2019-07-04 23:29:31,492 ERROR restartedMain com.example.elasticstackdemo.ElasticStackDemoApplication number: 8
+2019-07-04 23:29:31,492 ERROR restartedMain com.example.elasticstackdemo.ElasticStackDemoApplication number: 9
