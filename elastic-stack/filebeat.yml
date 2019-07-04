@@ -1,0 +1,8 @@
+filebeat.inputs:
+- type: log
+  enabled: true
+  paths:
+    - /tmp/logs/elastic-stack-demo.log
+  tail_files: true
+output.logstash:
+  hosts: ["logstash:5044"]
