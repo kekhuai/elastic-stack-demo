@@ -4,5 +4,8 @@ filebeat.inputs:
   paths:
     - /tmp/logs/elastic-stack-demo.log
   tail_files: true
+  multiline.pattern: '^[[:space:]]+(at|\.{3})\b|^Caused by:'
+  multiline.negate: false
+  multiline.match: after
 output.logstash:
   hosts: ["logstash:5044"]
